@@ -1,0 +1,34 @@
+# MsSQL数据库配置
+[database]
+    [[database.default]]
+        host     = "192.168.1.89\\SQL2008R2"
+        port     = "1433"
+        user     = "sa"
+        pass     = "deer20120220"
+        name ="deer_nhfx_v1_sanhe_20190114"
+        type ="mssql"
+[debug]
+    isDebug=true
+[log]
+    path="./log"
+    style="/{Y-m-d H}.log"
+[mongo]
+    url="192.168.1.89:27017"
+    dbName="newserver"
+    cName="nsq_consumer"
+[other]
+    # 超时时间 秒
+    timeDur=20
+    # 批处理数量
+    maxCount=10
+# nsq配置
+[nsq]
+  # nsqd地址
+  addr       = "192.168.1.89:4150"
+  # 主题
+  topic      = "sql"
+  # 通道
+  channel    = "deer"
+#渠道
+[channel]
+  name="deer"

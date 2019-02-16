@@ -1,0 +1,9 @@
+*.iml
+*.exe
+*.log
+/log
+/test
+/.idea
+.DS_Store
+*.sum
+*.xml
